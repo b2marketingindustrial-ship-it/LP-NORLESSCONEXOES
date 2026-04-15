@@ -6,7 +6,8 @@ export default function Card3D({ image, title, description }) {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   function handleMouseMove(e) {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
 
     const x = (e.clientY - top - height / 2) / 20;
     const y = (e.clientX - left - width / 2) / 20;
@@ -19,36 +20,43 @@ export default function Card3D({ image, title, description }) {
   }
 
   return (
-    <div
-      className="perspective-1000"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div className="perspective-1000 w-full flex justify-center">
       <div
-        className="relative w-full max-w-sm md:max-w-md lg:w-96 h-auto md:h-[480px] lg:h-[550px] rounded-2xl bg-white/80
-        text-white shadow-2xl transition-transform duration-300"
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="
+          relative w-full min-w-[260px] max-w-sm md:max-w-md lg:max-w-md
+          h-[440px] md:h-[480px] lg:h-[520px]
+          rounded-2xl bg-white shadow-2xl
+          transition-transform duration-300 ease-out
+          will-change-transform
+        "
         style={{
           transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
         }}
       >
-        {/* Glow effect */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br 
-        from-purple-500/20 to-blue-500/20 blur-xl opacity-50" />
+        {/* Glow */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/10 to-blue-500/10 blur-2xl opacity-60 pointer-events-none" />
 
         {/* Image */}
-        <div className="relative overflow-hidden rounded-t-2xl h-48 md:h-64 lg:h-100 ">
+        <div className="relative overflow-hidden rounded-t-2xl h-52 md:h-60 lg:h-64">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover transform hover:scale-110 transition duration-500"
+            className="object-cover transition-transform duration-500 hover:scale-110"
           />
         </div>
 
         {/* Content */}
-        <div className="p-4 flex flex-col gap-3">
-          <h2 className="text-xl font-semibold">{title}</h2>
-          <p className="text-sm text-black">{description}</p>
+        <div className="p-4 flex flex-col items-center gap-3 text-center">
+          <h2 className="text-lg md:text-xl font-semibold text-black">
+            {title}
+          </h2>
+
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {description}
+          </p>
         </div>
       </div>
     </div>

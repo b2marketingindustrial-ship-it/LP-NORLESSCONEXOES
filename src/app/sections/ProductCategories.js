@@ -5,17 +5,16 @@ import Card3D from '../components/productCard';
 
 export default function ProductsLine () {
   const products = [
-    { name: 'Filtro de Ar Parker',  image: '/product1.jpg' , description: 'Filtro de ar comprimido para remoção de impurezas e contaminantes.' },
-  
-    { name: 'Regulador de Pressão Parker', image: '/product2.jpg' , description: 'Regulador de pressão para controle preciso do ar comprimido.' },
-    
-    { name: 'Lubrificador Parker', image: '/product3.jpg' , description: 'Lubrificador para otimização da lubrificação em sistemas pneumáticos.'   },
-    
-    { name: 'Filtro-Regulador Parker', image: '/product4.jpg' , description: 'Combinação de filtro e regulador para tratamento eficiente do ar.' },
-    
-    { name: 'Unidade FRL Completa Parker', image: '/FRL-Serie-P3Y.jpg' , description: 'Unidade completa de filtro, regulador e lubrificador.' },
-  
-    { name: 'Separador de Água Parker', image: '/regulador-de-precisao-r210-r220-e-r230.jpg' , description: 'Separador para remoção de água e umidade do ar comprimido.' },
+    { name: 'Filtro de Ar Parker', image: '/brass-barbed-fittings.avif', description: 'Filtro para ar comprimido, removendo partículas e condensados antes da utilização.' },
+    { name: 'Regulador de Pressão Parker', image: '/Pneumatic-Adapters.webp', description: 'Regulador de pressão para distribuição estável e eficiente do ar pneumático.' },
+    { name: 'Lubrificador Parker', image: '/Compression-Fittings.avif', description: 'Lubrificador para manter a lubrificação contínua de cilindros e atuadores.' },
+    { name: 'Unidade FRL Completa Parker', image: '/Flareless-and-Bite-Type-Fittings.avif', description: 'Conjunto FRL integrando filtro, regulador e lubrificador em um único módulo.' },
+    { name: 'Separador de Água Parker', image: '/Hydraulic-Fittings.avif', description: 'Separador de condensados e umidade para proteger componentes pneumáticos.' },
+    { name: 'Conexões Pneumáticas Parker', image: '/Quick-Couplings-Pneumatic.webp', description: 'Engates rápidos e adaptadores Parker para sistemas de ar comprimido confiáveis.' },
+    { name: 'Conexões Push-to-Connect Parker', image: '/Push-to-Connect-Fittings.webp', description: 'Conexões rápidas para montagem simples sem ferramentas especiais.' },
+    { name: 'Conexões de Tubos Parker', image: '/Pipe-fittings.avif', description: 'Fittings para tubulações que garantem vedação segura em sistemas pneumáticos.' },
+    { name: 'Linha de Tubos Parker', image: '/Tube_Fittings_and_Equipment.jpg', description: 'Tubos e equipamentos Parker para distribuição eficiente de fluídos.' },
+    { name: 'Fittings Pneumáticos Parker', image: '/pneumaticFittings.avif', description: 'Soluções Parker em conexões e acessórios para aplicações pneumáticas industriais.' },
   ];
     return (
         <section className="section-padding bg-slate-50">
@@ -29,8 +28,8 @@ export default function ProductsLine () {
                 leading-relaxed"></p>
             </div>
             <div className="container-custom">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 
-                md:gap-8 lg:gap-20 justify-items-center" >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 
+                md:gap-20 lg:gap-20 justify-items-center" >
                     {products.map((product, idx) => (
                         <motion.div
                             key={product.name}
