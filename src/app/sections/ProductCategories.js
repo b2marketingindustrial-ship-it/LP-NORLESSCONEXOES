@@ -4,18 +4,68 @@ import Card3D from '../components/productCard';
 
 
 export default function ProductsLine () {
-  const products = [
-    { name: 'Filtro de Ar Parker', image: '/brass-barbed-fittings.avif', description: 'Filtro para ar comprimido, removendo partículas e condensados antes da utilização.' },
-    { name: 'Regulador de Pressão Parker', image: '/Pneumatic-Adapters.webp', description: 'Regulador de pressão para distribuição estável e eficiente do ar pneumático.' },
-    { name: 'Lubrificador Parker', image: '/Compression-Fittings.avif', description: 'Lubrificador para manter a lubrificação contínua de cilindros e atuadores.' },
-    { name: 'Unidade FRL Completa Parker', image: '/Flareless-and-Bite-Type-Fittings.avif', description: 'Conjunto FRL integrando filtro, regulador e lubrificador em um único módulo.' },
-    { name: 'Separador de Água Parker', image: '/Hydraulic-Fittings.avif', description: 'Separador de condensados e umidade para proteger componentes pneumáticos.' },
-    { name: 'Conexões Pneumáticas Parker', image: '/Quick-Couplings-Pneumatic.webp', description: 'Engates rápidos e adaptadores Parker para sistemas de ar comprimido confiáveis.' },
-    { name: 'Conexões Push-to-Connect Parker', image: '/Push-to-Connect-Fittings.webp', description: 'Conexões rápidas para montagem simples sem ferramentas especiais.' },
-    { name: 'Conexões de Tubos Parker', image: '/Pipe-fittings.avif', description: 'Fittings para tubulações que garantem vedação segura em sistemas pneumáticos.' },
-    { name: 'Linha de Tubos Parker', image: '/Tube_Fittings_and_Equipment.jpg', description: 'Tubos e equipamentos Parker para distribuição eficiente de fluídos.' },
-    { name: 'Fittings Pneumáticos Parker', image: '/pneumaticFittings.avif', description: 'Soluções Parker em conexões e acessórios para aplicações pneumáticas industriais.' },
-  ];
+const products = [
+  {
+    name: 'Conexões Flare Parker',
+    image: '/Flare_Fittings_zm.avif',
+    description: 'Conexões flare para sistemas hidráulicos e pneumáticos, projetadas para vedação metálica confiável em aplicações de média e alta pressão.',
+  },
+  {
+    name: 'Adaptadores de Conexão Parker',
+    image: '/Adapters_zm.avif',
+    description: 'Adaptadores para transição entre diferentes padrões de rosca e tipos de conexão em sistemas de fluidos industriais.',
+  },
+  {
+    name: 'Conexões Espigão Parker',
+    image: '/brass-barbed-fittings.avif',
+    description: 'Conexões tipo espigão para mangueiras flexíveis, garantindo fixação segura em sistemas de baixa pressão.',
+  },
+  {
+    name: 'Regulador de Pressão Pneumático Parker',
+    image: '/Pneumatic-Adapters.webp',
+    description: 'Dispositivo de controle de pressão para estabilização do fluxo de ar comprimido em sistemas pneumáticos.',
+  },
+  {
+    name: 'Conexões de Compressão Parker',
+    image: '/Compression-Fittings.avif',
+    description: 'Conexões de compressão que garantem vedação mecânica segura em tubos metálicos sem necessidade de solda.',
+  },
+  {
+    name: 'Conexões Flareless e Bite Type Parker',
+    image: '/Flareless-and-Bite-Type-Fittings.avif',
+    description: 'Conexões sem flange que utilizam sistema de anel de corte para vedação robusta em alta pressão.',
+  },
+  {
+    name: 'Conexões Hidráulicas Parker',
+    image: '/Hydraulic-Fittings.avif',
+    description: 'Conexões hidráulicas para sistemas de alta pressão com vedação segura e resistência a vibração e fadiga.',
+  },
+  {
+    name: 'Engates Rápidos Pneumáticos Parker',
+    image: '/Quick-Couplings-Pneumatic.webp',
+    description: 'Engates rápidos para conexão e desconexão de linhas pneumáticas com válvula de retenção automática.',
+  },
+  {
+    name: 'Conexões Push-to-Connect Parker',
+    image: '/Push-to-Connect-Fittings.webp',
+    description: 'Conexões de encaixe rápido sem ferramentas, ideais para sistemas pneumáticos e automação industrial.',
+  },
+  {
+    name: 'Conexões para Tubos Parker',
+    image: '/Pipe-fittings.avif',
+    description: 'Conexões para tubulações industriais com vedação confiável em sistemas de fluidos e gases.',
+  },
+  {
+    name: 'Tubos e Acessórios Parker',
+    image: '/Tube_Fittings_and_Equipment.jpg',
+    description: 'Linha completa de tubos e conexões para distribuição de fluidos em aplicações industriais.',
+  },
+  {
+    name: 'Conexões Pneumáticas Parker',
+    image: '/pneumaticFittings.avif',
+    description: 'Conexões pneumáticas para sistemas de ar comprimido com foco em eficiência, vedação e durabilidade.',
+  },
+];
     return (
         <section className="section-padding bg-slate-50">
             <div className="container-custom text-center mb-14 md:mb-20">
