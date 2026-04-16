@@ -26,7 +26,7 @@ export default function Card3D({ image, title, description }) {
         onMouseLeave={handleMouseLeave}
         className="
           relative w-full min-w-[260px] max-w-sm md:max-w-md lg:max-w-md
-          h-[440px] md:h-[480px] lg:h-[520px]
+          h-[500px] md:h-[480px] lg:h-[520px]
           rounded-2xl bg-white shadow-2xl
           transition-transform duration-300 ease-out
           will-change-transform
@@ -39,7 +39,7 @@ export default function Card3D({ image, title, description }) {
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/10 to-blue-500/10 blur-2xl opacity-60 pointer-events-none" />
 
         {/* Image */}
-        <div className="relative overflow-hidden rounded-t-2xl h-52 md:h-60 lg:h-64">
+        <div className="relative overflow-hidden rounded-t-2xl h-80 md:h-60 lg:h-64">
           <Image
             src={image}
             alt={title}

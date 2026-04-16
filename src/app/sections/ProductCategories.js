@@ -79,7 +79,7 @@ const products = [
             </div>
             <div className="container-custom">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 
-                md:gap-20 lg:gap-20 justify-items-center" >
+                md:gap-6 lg:gap-6 justify-items-center" >
                     {products.map((product, idx) => (
                         <motion.div
                             key={product.name}
